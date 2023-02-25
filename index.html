@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F2Contest3</title>
+    <style>
+        body{
+            padding: 0;
+            margin : 0;
+            box-sizing: border-box;
+        }
+        .nav{
+            width: 100%;
+            height: 60px;
+            background-color: black;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+        .nav h2{
+            color: whitesmoke;
+            margin-left: 30px;
+        }
+        .container{
+            /* background-color: yellow; */
+            margin: auto;
+            margin-top: 60px;
+            padding: 30px;
+            width : 90%;
+            height: 80vh;
+        }
+        .add-btn{
+            width: 250px;
+            height: 38px;
+            font-size: 20px;
+        }
+        button{
+            background-color: black;
+            color: whitesmoke;
+        }
+        table{
+            width: 100%;
+            margin: auto;
+            margin-top: 30px;
+            border: 1px solid black;
+            border-collapse: collapse;
+        } 
+
+        thead, tbody, th, td{
+            border: 1px solid black;
+            text-align: center;
+        }
+        th, td{
+            height: 35px;;
+        }
+        input{
+            width : 95%;
+            height: 100%;
+            border: none;
+            /* padding: 10px; */
+            font-size: 16.5px;
+            text-align: center;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <h2>Dashboard</h2>
+    </div>
+    <div class="container">
+        <!-- <div class="heading"> -->
+            <button class="add-btn" id="addRow">Add A New Row</button>
+        <!-- </div> -->
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 6%;">ID</th>
+                    <th style="width: 19%;">Student Name</th>
+                    <th style="width: 15%;">Student Roll</th>
+                    <th style="width: 15%;">Subject</th>
+                    <th style="width: 10%;">Marks</th>
+                    <th style="width: 20%;">Marked By</th>
+                    <th style="width: 10%;">Save</th>
+                </tr>
+            </thead>
+            <tbody id="tBody">
+               <!-- <form action="">
+                <tr>
+                    <td>1</td>
+                    <td>Avi Vashishta</td>
+                    <td>2020500</td>
+                    <td>English</td>
+                    <td>95</td>
+                    <td>teacher@gmail.com</td>
+                    <td><button onsubmit="">Save</button></td>
+                </tr>
+               </form> -->
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
